@@ -1,89 +1,328 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/11.4.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/11.4.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/11.4.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/11.4.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/11.4.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/11.4.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/11.4.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/11.4.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/11.4.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/11.4.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    
+
+    <div class="container">
+      <!-- New Image (Background) -->
+      <img src="img/new-image.jpg" class="new-image" />
+
+      <!-- Old Image (Two Split Parts) -->
+      <div class="split-container">
+        <div class="left-half"></div>
+        <div class="right-half"></div>
+      </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <div class="section" id="intro">
+      <div
+        class="content-fit"
+        style="display: flex; flex-direction: column; align-items: center"
+      >
+        <div class="title">
+          <div>Why You Choose ?&nbsp;</div>
+          <div><span id="typewriter"></span><span id="cursor">|</span></div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <h1 style="color: white">
+          Your One stop solution for digital pressence
+        </h1>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
+        <div class="title" style="margin-top: 100px">
+          
+          <div>S Cube Innovation&nbsp;</div>
+          <span id="typewrite"></span><span id="cursor"></span>
+        </div>
+
+        <br />
+        <br />
+        <div class="des" style="margin-top: 10px">
+          <div class="client">OURS SERVICES</div>
+        </div>
+        <div class="xgrowth">
+          <ul>
+            <li><h2 style="color: white">*Meta Ads</h2></li>
+            <li><h2 style="color: white">*Google Adds</h2></li>
+            <li><h2 style="color: white">*LinkedIn Ads</h2></li>
+            <li><h2 style="color: white">*Web pages Ads</h2></li>
+            <li></li>
+          </ul>
+          <ul>
+            <li><h2 style="color: white">*Mobile App Ads</h2></li>
+            <li><h2 style="color: white">*Infulaser Marketing</h2></li>
+            <li><h2 style="color: white">*SEO-Marketing</h2></li>
+            <li><h2 style="color: white">*Web-Traffice - Marketing</h2></li>
+            <li></li>
+          </ul>
+        </div>
+
+        <div class="des" style="margin-top: 100px">
+          <div class="client">OURS CLIENT'S</div>
+        </div>
+
+        <section class="extra-map">
+          <div class="rm">
+            <div class="cards-wrapper">
+              <div class="card">
+                <img src="img/Casagrand-Logo1.png" alt="Casagrand" />
+              </div>
+              <div class="card">
+                <img src="img/Green Trends Logo 2.png" alt="Green Trends" />
+              </div>
+              <div class="card">
+                <img src="img/GT-Holidays-Logo.jpg" alt="GT Holidays" />
+              </div>
+              <div class="card"><img src="img/book1.png" alt="Book" /></div>
+              <div class="card"><img src="img/stu.jpg" alt="Student" /></div>
+              <div class="card"><img src="img/gg.jpg" alt="Nature" /></div>
+              <div class="card"><img src="img/rdc.png" alt="RDC" /></div>
+              <div class="card"><img src="img/ton.png" alt="TON" /></div>
+              <div class="card"><img src="img/un.png" alt="UN" /></div>
+              <div class="card">
+                <img src="img/Casagrand-Logo1.png" alt="Casagrand" />
+              </div>
+              <div class="card">
+                <img src="img/Green Trends Logo 2.png" alt="Green Trends" />
+              </div>
+              <div class="card">
+                <img src="img/GT-Holidays-Logo.jpg" alt="GT Holidays" />
+              </div>
+              <div class="card"><img src="img/book1.png" alt="Book" /></div>
+              <div class="card"><img src="img/stu.jpg" alt="Student" /></div>
+              <div class="card"><img src="img/gg.jpg" alt="Nature" /></div>
+              <div class="card"><img src="img/rdc.png" alt="RDC" /></div>
+              <div class="card"><img src="img/ton.png" alt="TON" /></div>
+              <div class="card"><img src="img/un.png" alt="UN" /></div>
+              <div class="card">
+                <img src="img/Casagrand-Logo1.png" alt="Casagrand" />
+              </div>
+              <div class="card">
+                <img src="img/Green Trends Logo 2.png" alt="Green Trends" />
+              </div>
+              <div class="card">
+                <img src="img/GT-Holidays-Logo.jpg" alt="GT Holidays" />
+              </div>
+              <div class="card"><img src="img/book1.png" alt="Book" /></div>
+              <div class="card"><img src="img/stu.jpg" alt="Student" /></div>
+              <div class="card"><img src="img/gg.jpg" alt="Nature" /></div>
+              <div class="card"><img src="img/rdc.png" alt="RDC" /></div>
+              <div class="card"><img src="img/ton.png" alt="TON" /></div>
+              <div class="card"><img src="img/un.png" alt="UN" /></div>
+            </div>
+          </div>
+        </section>
+        <div class="grid-cont" style="margin-top: 50px">
+          <div class="grid-it">
+            <img src="img/Client 1.png" alt="Image" />
+          </div>
+
+          <div class="grid-it"><img src="img/Client 2.png" alt="Image" /></div>
+          <div class="grid-it"><img src="img/Client 3.png" alt="Image" /></div>
+          <div class="grid-it"><img src="img/Client 4.png" alt="Image" /></div>
+          <div class="grid-it"><img src="img/Client 5.png" alt="Image" /></div>
+          <div class="grid-it"><img src="img/Client 6.png" alt="Image" /></div>
+        </div>
+
+        <div class="grid-container" style="margin-top: 50px">
+          <div class="grid-item">
+            <img src="img/GROWTH 1.png" alt="Image" />
+          </div>
+          <div class="grid-item">
+            <img src="img/GROWTH 2.png" alt="Image" />
+          </div>
+          <div class="grid-item">
+            <img src="img/GROWTH 3.png" alt="Image" />
+          </div>
+          <div class="grid-item">
+            <img src="img/GROWTH 4.png" alt="Image" />
+          </div>
+          <div class="grid-item">
+            <img src="img/GROWTH 5.png" alt="Image" />
+          </div>
+          <div class="grid-item">
+            <img src="img/GROWTH 6.png" alt="Image" />
+          </div>
+        </div>
+
+        <div class="contain">
+          <!-- New Image (Background) -->
+          <img src="img/Facebook Campaign post.jpg" class="new-image" />
+
+          <!-- Old Image (Two Split Parts) -->
+        </div>
+        <!-- <div class="number" style="flex-shrink: 0;">01</div> -->
+      </div>
+    </div>
+    <div class="titles" style="margin-top: 100px">
+      <h4>Be Ready</h4>
+    </div>
+
+
+   
+
+
+    <div class="containe" style="margin-top: 100px">
+      <!-- New Image (Background) -->
+      <div class="con">
+        <img src="img/untitled_design.png" alt="Logo 1" class="logo" />
+        <div class="plus">+</div>
+        <img src="img/vector_tatas.png" alt="Logo 2" class="logo1 " style="color:white" />
+      </div>
+    </div>
+
+    <div style="margin-top: -250px;">
+      <h1 style="display: flex; flex-direction: column; align-items: center;color:white">
+        Premium WebSite with Stagnet SEO.
+      </h1>
+      <h1 style="display: flex; flex-direction: column; align-items: center;color:white">
+        SEO KeyWord Update.
+      </h1>
+
+      <div class="contain">
+        <!-- New Image (Background) -->
+        <img src="img/target_audience.png" class="new-image" />
+
+        <!-- Old Image (Two Split Parts) -->
+      </div>
+    </div>
+    <div>
+      <h1 style="display: flex; flex-direction: column; align-items: center;color:white;margin-top: 50px;">
+        ADD Campaign
+      </h1>
+      <h1 style="display: flex; flex-direction: column; align-items: center;color:white">
+        Premium Poster Designs(Brand Ambassidor).
+      </h1>
+    </div>
+ 
+
+    
+    <div class=" important" style="margin-left:230px">
+      <!-- New Image (Background) -->
+      <img src="img/poster_per.jpg" class="new-image" />
+
+      <!-- Old Image (Two Split Parts) -->
+    </div>
+
+    <div class=" import" style="margin-left:230px">
+      <!-- New Image (Background) -->
+      <img src="img/Add a heading (1).jpg" class="new-image newd" />
+
+      <!-- Old Image (Two Split Parts) -->
+    </div>
+    <div  style="margin-top:10px">
+      <h1 style="display: flex; flex-direction: column; align-items: center;color:white">
+        Staff Training
+      </h1>
+      <h1 style="display: flex; flex-direction: column; align-items: center;color:white">
+        CRM and Marketing Person Training
+      </h1>
+
+      <h1 style="display: flex; flex-direction: column; align-items: center;color:white">
+    
+        How To handle Leads in aPhone Call
+      </h1>
+
+      <h1 style="display: flex; flex-direction: column; align-items: center;color:white">
+        Our Strategy & Your Responces should match
+      </h1>
+
+      <h1 style="display: flex; flex-direction: column; align-items: center;color:white">
+        Money Back  Guarantee
+      </h1>
+
+    </div>
+
+
+    <!-- <section class="team-section">
+      <h2>OUR TEAM</h2>
+      <div class="team-container">
+          <div class="team-member">
+              <div class="img-box">
+                  <img src="Vishnu.jpg" alt="Team Member">
+              </div>
+              <p class="name">VISHNU<br> <h5>SENIOR SOFTWARE DEVELOPER</h5></p>
+          </div>
+          <div class="team-member">
+              <div class="img-box">
+                  <img src="Sam.jpg" alt="Team Member">
+              </div>
+              <p class="name">SAM <br> <h5>BUISSNESS MANAGER </h5></p>
+          </div>
+          <div class="team-member">
+              <div class="img-box">
+                  <img src="Vignesh.jpg" alt="Team Member">
+              </div>
+              <p class="name">VIGNESH <br><h5> SEO SPECIALIST </h5></p>
+          </div>
+          <div class="team-member">
+              <div class="img-box">
+                  <img src="Mugilan.jpg" alt="Team Member">
+              </div>
+              <p class="name">MUHILARASAN <br><h5> AI DEVELOPER</h5></p>
+          </div>
+          <div class="team-member">
+              <div class="img-box">
+                  <img src="Hardeep.jpg" alt="Team Member">
+              </div>
+              <p class="name">HARDEEP <br> <h5>GOOGLE ENGINE DEVELOPER</h5></p>
+          </div>
+      </div>
+  </section> -->
+  <section class="our-team-section" style="margin-top: 100px;">
+    <h2 style="color:white">OUR TEAM</h2>
+    <div class="members-wrapper">
+        <div class="member-card">
+            <div class="profile-pic-container">
+                <img src="img/Vishnu.jpg" alt="Team Member">
+            </div>
+            <p class="member-name">VISHNU</p>
+            <h5>SENIOR SOFTWARE DEVELOPER</h5>
+        </div>
+        <div class="member-card">
+            <div class="profile-pic-container">
+                <img src="img/Sam.jpg" alt="Team Member">
+            </div>
+            <p class="member-name">SAM</p>
+            <h5>BUSINESS MANAGER</h5>
+        </div>
+        <div class="member-card">
+            <div class="profile-pic-container">
+                <img src="img/Vignesh.jpg" alt="Team Member">
+            </div>
+            <p class="member-name">VIGNESH</p>
+            <h5>SEO SPECIALIST</h5>
+        </div>
+        <div class="member-card">
+            <div class="profile-pic-container">
+                <img src="img/Mugilan.jpg" alt="Team Member">
+            </div>
+            <p class="member-name">MUHILARASAN</p>
+            <h5>AI DEVELOPER</h5>
+        </div>
+        <div class="member-card">
+            <div class="profile-pic-container">
+                <img src="img/Hardeep.jpg" alt="Team Member">
+            </div>
+            <p class="member-name">HARDEEP</p>
+            <h5>GOOGLE ENGINE DEVELOPER</h5>
+        </div>
+    </div>
+</section>
+
   </body>
+
+  <div id="container3D"></div>
+  <script type="module" src="app.js"></script>
+  <script type="module" src="script.js"></script>
+  <script type="module" src="scube.js"></script>
 </html>
